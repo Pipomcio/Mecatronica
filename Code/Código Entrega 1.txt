@@ -1,0 +1,55 @@
+#include <Servo.h>
+
+int IN1 = 3; // Se definen los pineas del puente H
+int IN2 = 4; // Los primeros tres son para el motor DC delantero y 
+int ENA = 5; // los otros 3 para el trasero. ENA y ENB deben ser PWM
+int angulo = 0; // Se define una variable que guarda el ángulo del servo
+Servo motor1; // Se define el nombre del servomotor
+
+//int IN3 = 7;  // Se definen los pines para el motor trasero.
+//int IN4 = 8;
+//int ENB = 9; // Debe ser PWM al igual que ENA
+
+void setup() {
+  pinMode(IN1, OUTPUT); // Todos deben ser OUTPUT
+  pinMode(IN2, OUTPUT);
+  pinMode(ENA, OUTPUT);
+  //pinMode(IN3, OUTPUT);
+  //pinMode(IN4, OUTPUT);
+  //pinMode(ENB, OUTPUT);
+
+  Serial.begin(9600); // Iniciamos el serial
+  motor1.attach(10); // Definimos el pin donde funcionará el servo motor
+  motor1.write(0); // El servo empieza con un ángulo inicial 0, para evitar movimientos bruscos
+
+}
+
+void loop() {
+  analogWrite(ENA, 255); // Se le da el nivel de energía para el motor delantero
+  digitalWrite(IN1, LOW); // Se le da un nivel 0 a IN1 y 1 a IN2 para que el motor gire en sentido de las agujas del reloj
+  digitalWrite(IN2, HIGH);
+  analogWrite(ENB, 255); // Lo mismo que el motor delantero
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+
+  delay(3000); // El retraso de tiempo para que avance seguido
+
+  analogWrite(ENA, 0); // Se apagan los motores para
+  analogWrite(ENB, 0);
+  delay(3000); // Delay de tiempo para que esten apagados los motores
+// Primera iteración, girar de 0 a 180 grados con incremento de 1
+for (angulo = 0; angulo <= 180; angulo += 1) {
+// Le mandamos el mensaje al servo para que vaya al ángulo dado
+    motor1.write(angulo);
+    Serial.println(angulo); // Imprimimos el ángulo actual para que tenga el registro
+    delay(20); // El retraso de tiempo para evitar problemas de código continuo
+  }
+// Segunda iteración, giramos de 180 a 0 grados y repetimos el proceso anterior
+  for (angulo = 180; angulo >= 0; angulo -= 1) {
+    motor1.write(angulo);
+    Serial.println(angulo);
+    delay(20); 
+  }
+
+
+}
