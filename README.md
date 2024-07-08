@@ -2,11 +2,11 @@
 Integrantes: Camila Merino - Mauricio Pavez - Felipe Valenzuela
 
 Resumen del proyecto:
-
-
+Este proyecto biomecánico se realizó por 3 estudiantes de la Universidad de Chile, para el curso de Mecatrónica. Dicho proyecto constistió de 3 entregas en las cuales se iban agregando nuevos componentes y junto con ello, nuevos desafíos a afrontar con el propósito de aprender las distintas posibilidades que ofrece el mundo de la electrónica, desde el aprendizaje del lenguaje C+, hasta el conocimiento en soldadura de placas PCB. A continuación, se verá todo el proceso que se llevó a cabo para lograr crear un ajolote funcional.
 
 
 Entrega Inicial:
+
 ![b1](https://github.com/Pipomcio/Mecatronica/assets/96321041/8243b818-9daf-495d-93da-d6bc2911f12f)
 ![WhatsApp Image 2024-04-21 at 19 01 58](https://github.com/Pipomcio/Mecatronica/assets/96321041/aa597eaa-4416-4f5e-b500-1bd8ae5f8678)
 ![colamotor](https://github.com/Pipomcio/Mecatronica/assets/96321041/04daffd8-0d66-49f7-b512-29e3f0abb9e5)
