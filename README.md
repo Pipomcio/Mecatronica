@@ -13,3 +13,6 @@ Entrega Inicial:
 ![circ2](https://github.com/Pipomcio/Mecatronica/assets/96321041/01655ebc-f5b3-4306-8aa0-fbcc691bf8a4)
 
 Entrega Final:
+![WhatsApp Image 2024-07-08 at 00 50 56](https://github.com/Pipomcio/Mecatronica/assets/96321041/e5c441b9-a4ac-4b34-9e8d-56dcec2b1bc7)
+![WhatsApp Image 2024-07-08 at 00 50 56 (1)](https://github.com/Pipomcio/Mecatronica/assets/96321041/7bda554d-a30d-4e85-ba84-94217bf1adae)
+![WhatsApp Image 2024-07-08 at 00 50 55](https://github.com/Pipomcio/Mecatronica/assets/96321041/3202f3d3-9a96-4f99-87aa-168674539937)
