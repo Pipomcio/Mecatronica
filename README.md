@@ -21,5 +21,13 @@ Entrega Final:
 
 
 
+https://github.com/Pipomcio/Mecatronica/assets/96321041/1ff2b8b7-3acd-496c-8946-47d43380be64
+
+
+
+https://github.com/Pipomcio/Mecatronica/assets/96321041/3ee2d10a-e5da-4b48-a4a6-1dd0c76d6bae
+
+
+
 
 
